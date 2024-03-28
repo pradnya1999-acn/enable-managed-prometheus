@@ -12,12 +12,12 @@ resource "google_container_cluster" "primary" {
   name     = "my-gke-cluster"
   location = "us-central1"
   initial_node_count       = 1
-  enable_autopilot   = true
+  enable_autopilot   = false
 
     monitoring_config {
     enable_components = ["SYSTEM_COMPONENTS"]
     managed_prometheus {
-      enabled = true
+      enabled = false
     }
   }
 
