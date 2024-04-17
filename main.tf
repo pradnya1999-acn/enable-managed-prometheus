@@ -12,7 +12,7 @@ resource "google_container_cluster" "primary" {
   name     = "my-gke-cluster"
   location = "us-central1"
   initial_node_count       = 1
-  enable_autopilot   = false
+  enable_autopilot   = true
 
     monitoring_config {
     enable_components = ["SYSTEM_COMPONENTS"]
